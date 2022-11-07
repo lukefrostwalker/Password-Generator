@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Karla:wght@800&display=swap');
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    background: rgb(44,62,80);
+    background: linear-gradient(300deg, rgba(44,62,80,1) 0%, rgba(189,195,199,1) 100%);}
+main {
+    background: #1F2937;
+    height: 550px;
+    width: 550px;
+}
+header h1 {
+    line-height: 1;
+    font-family: 'Karla', sans-serif;
+}
+header .accent-color {
+    color: #0EA5E9;
+}
+button {
+    padding: 9px 15px;
+    background: #0EA5E9 !important;
+    border: none;
+    color: white;
+}
+button:hover {
+    background: #0a7cb1 !important;
+}
+.output-container .tooltiptext {
+    visibility: hidden;
+    background-color: #555 ;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+/* .copy-one:hover #myTooltipOne {
+    visibility: visible;
+    opacity: 1;
+}
+.copy-two:hover #myTooltipTwo {
+    visibility: visible;
+    opacity: 1;
+} */
+.borderLine {
+    height: 1px;
+    background: #374151;
+}
+.input-group .input-group-text {
+    background: #0EA5E9;
+    color: #fff !important;
+}
+input #pwLength {
+    background: #374151;
+    color: #fff;
+    width: 1rem !important;
+}
+#pwLength:focus {
+    box-shadow: none !important;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+/* .output-container {
+    display: block;
+    position: relative;
+} */
+input {
+    background: #374151 !important;
+    color: #0EA5E9 !important;
+}
+input:focus {
+    box-shadow: none !important;
+
+}
+/* .output:first-of-type { */
+    /* margin-right: 24px; */
+    /* margin-bottom: 12px; */
+/* } */
+/* .copy-one { */
+    /* position: absolute; */
+    /* left: 92%; */
+    /* height: 38px; */
+    /* bottom: 17%; */
+/* } */
+/* .copy-two { */
+    /* position: absolute; */
+    /* height: 38px; */
+    /* left: 92%; */
+    /* bottom: -41%; */
+/* } */
+.pwLength-container {
+    width: 200px;
+}
