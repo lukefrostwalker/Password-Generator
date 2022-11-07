@@ -5,7 +5,10 @@ let hasGenerated = false
 let pwLength = document.querySelector("#pwLength")
 
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl, {container: "body", trigger: "hover"}))
+
+const tooltipInstanceOne = bootstrap.Tooltip.getInstance('.copy-one[data-bs-title]');
+const tooltipInstanceTwo = bootstrap.Tooltip.getInstance('.copy-two[data-bs-title]');
 
 function generatePasswords() {
     if (hasGenerated === false) {
@@ -25,19 +28,15 @@ function generatePasswords() {
 }
 function copyTextOne() {
     navigator.clipboard.writeText(outputOne.value)
-    let tooltip = document.querySelector("#myTooltipOne")
-    tooltip.innerHTML = "Copied to clipboard"
-}
-function copyTextTwo() {
-    navigator.clipboard.writeText(outputTwo.value)
-    let tooltip = document.querySelector("#myTooltipTwo")
-    tooltip.innerHTML = "Copied to clipboard"
+    tooltipInstanceOne.setContent({ '.tooltip-inner': 'Copied to clipboard'});      
 }
 function outFuncOne() {
-    let tooltip = document.getElementById("myTooltipOne");
-    tooltip.innerHTML = "Copy to clipboard";
-  }
+    tooltipInstanceOne.setContent({ '.tooltip-inner': 'Copy to clipboard'});
+}   
+function copyTextTwo() {
+    navigator.clipboard.writeText(outputTwo.value)
+    tooltipInstanceTwo.setContent({ '.tooltip-inner': 'Copied to clipboard'});
+}
 function outFuncTwo() {
-    let tooltip = document.getElementById("myTooltipTwo");
-    tooltip.innerHTML = "Copy to clipboard";
+    tooltipInstanceTwo.setContent({ '.tooltip-inner': 'Copy to clipboard'});
 }

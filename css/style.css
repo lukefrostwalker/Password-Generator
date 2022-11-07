@@ -32,14 +32,6 @@ button:hover {
     opacity: 0;
     transition: opacity 0.3s;
 }
-/* .copy-one:hover #myTooltipOne {
-    visibility: visible;
-    opacity: 1;
-}
-.copy-two:hover #myTooltipTwo {
-    visibility: visible;
-    opacity: 1;
-} */
 .borderLine {
     height: 1px;
     background: #374151;
@@ -47,6 +39,9 @@ button:hover {
 .input-group .input-group-text {
     background: #0EA5E9;
     color: #fff !important;
+}
+.pwLength-container {
+    width: 200px;
 }
 input #pwLength {
     background: #374151;
@@ -56,46 +51,18 @@ input #pwLength {
 #pwLength:focus {
     box-shadow: none !important;
 }
-
-
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
+  /* -webkit-appearance: none; */
   margin: 0;
 }
-input[type=number] {
-  -moz-appearance: textfield;
-}
-
-
-/* .output-container {
-    display: block;
-    position: relative;
-} */
 input {
     background: #374151 !important;
     color: #0EA5E9 !important;
 }
 input:focus {
     box-shadow: none !important;
-
 }
-/* .output:first-of-type { */
-    /* margin-right: 24px; */
-    /* margin-bottom: 12px; */
-/* } */
-/* .copy-one { */
-    /* position: absolute; */
-    /* left: 92%; */
-    /* height: 38px; */
-    /* bottom: 17%; */
-/* } */
-/* .copy-two { */
-    /* position: absolute; */
-    /* height: 38px; */
-    /* left: 92%; */
-    /* bottom: -41%; */
-/* } */
-.pwLength-container {
-    width: 200px;
+i {
+    font-size: 20px;
 }
