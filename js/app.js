@@ -17,12 +17,12 @@ function generatePasswords() {
             let randomized2 = Math.floor(Math.random() * characters.length)
             outputOne.value += characters[randomized1]
             outputTwo.value += characters[randomized2]
-            hasGenerated = true
         } 
+        hasGenerated = true
     } else {
+        hasGenerated = false
         outputOne.value = ""
         outputTwo.value = ""
-        hasGenerated = false
         generatePasswords()
     }
 }
